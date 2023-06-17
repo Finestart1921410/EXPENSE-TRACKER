@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="EXPENSETRACKER3.css" />
+
+<style>
+    
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+/* Set the width of the sidebar to 120px */
+.w3-sidebar {width: 120px;background: #222;}
+
+
+#main {margin-left: 120px}
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+</style>
+</head>
+<body class="w3-black">
+
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+    <img src="C:\Users\Keanf\Downloads\KEAN PORTFOLIO AND CV\Java code\EXPENSE TRACKER\EXPENSE\src\logo.png" alt="boy" class="w3-image" width="70%" >
+  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
+    <i class="fa fa-home w3-xxlarge"></i>
+    <p>HOME</p>
+  </a>
+  <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-user w3-xxlarge"></i>
+    <p>ABOUT</p>
+  </a>
+  <a href="#photos" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-eye w3-xxlarge"></i>
+    <p>PHOTOS</p>
+  </a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-envelope w3-xxlarge"></i>
+    <p>CONTACT</p>
+  </a>
+</nav>
+
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+    <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
+    <a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">PHOTOS</a>
+    <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
+  </div>
+</div>
+
+<!-- Page Content -->
+<div class="w3-padding-large" id="main">
+  <!-- Header/Home -->
+  <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+    <h1 class="w3-jumbo"><span class="w3-hide-small">EXPENSE</span> TRACKER</h1>
+    <p>Achieve financial freedom with Expense Tracker!</p>
+    <img src="C:\Users\Keanf\Downloads\KEAN PORTFOLIO AND CV\Java code\EXPENSE TRACKER\EXPENSE\src\logo2.png" alt="boy" class="w3-image" width="750" height=>        
+   
+
+
+    <div class="container">
+        <h4>Your Balance</h4>
+        <h1 id="balance">$0.00</h1>
+        <div class="inc-exp-container">
+          <div>
+            <h4>Income</h4>
+            <p id="money-plus" class="money-plus">
+              +$0.00
+            </p>
+          </div>
+          <div>
+            <h4>Expense</h4>
+            <p id="money-minus" class="money-minus">
+              -$0.00
+            </p>
+          </div>
+        </div>
+  
+        <h3>History</h3>
+        <ul id="list" class="list">
+          <!-- <li class="minus">
+            Cash <span>-$400</span
+            ><button class="delete-btn">x</button>
+          </li> -->
+        </ul>
+        <h3>Add New Transition</h3>
+        <form id="form">
+            <div class="form-control">
+                <label for="text">Text</label>
+                <input type="text" id="text" placeholder="Enter Text...."/>
+            </div>
+            <div class="form-control">
+                <label for="amount">Amount <br> (negative - expense ,positive - income )</label>
+                <input type="number" id="amount" placeholder="Enter amount..."> 
+            </div>
+            <button class="btn">All transaction</button>
+        </form>
+      </div>
+      <!-- JavaYscript Project  -->
+      <script src="EXPENSETRACKER2.js"></script>
+    
+
+      <img src="C:\Users\Keanf\Downloads\KEAN PORTFOLIO AND CV\Java code\EXPENSE TRACKER\EXPENSE\src\logo2.png" alt="boy" class="w3-image" width="750" height=>        
+</header>
+
+  <!-- About Section -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+    <h2 class="w3-text-light-grey">TRACK YOUR EXPENSES</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <p>Manage your finances effortlessly with our user-friendly
+        Expense Tracker Web Application. Gain control of your income 
+       and expenses, categorize transactions, and track spending
+        patterns with ease. Stayinformed with instant balance updates 
+       and generate insightful reports to make smarter financial decisions. 
+       Sign up today and experience the peace of mind that comes 
+       from effective financial management. Saygoodbye to stress and 
+       hello to a brighter, financially secure future. Take control 
+       of your money and unlock a world of financial freedom. 
+       Get started now and embrace a life of financial empowerment!
+    </p>
+    <h3 class="w3-padding-16 w3-text-lighter-grey">How to Track Your Expenses
+    </h3>
+    <p class="w3-wide">Step One: Create a Budget</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:25%"></div>
+    </div>
+    <p class="w3-wide">Step Two: If You Make Money, Track It</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:50%"></div>
+    </div>
+    <p class="w3-wide">Step Three: If You Spend Money, Track It</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:75%"></div>
+    </div>
+    <p class="w3-wide">Step Four: Set a Regular Rhythm for Tracking
+    </p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:99%"></div>
+    </div><br>
+    
+    <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey">
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">Determine</span><br>
+        your budgeting goals
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">Calculate</span><br>
+        your total income.
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">Track</span><br>
+        your monthly spending.
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">Create</span><br>
+        a customized budget plan.
+      </div>
+    </div>
+
+    <button class="w3-button w3-light-grey w3-padding-large w3-section">
+      <i class="fa fa-download"></i> Download Expense Tracker Guide
+    </button>
+    
+    <!-- Grid for pricing tables -->
+    
+    <!-- End Grid/Pricing tables -->
+    </div>
+  </div>
+  
+  <!-- Portfolio Section -->
+  <div class="w3-padding-64 w3-content" id="photos">
+    <h3 class="w3-padding-16 w3-text-light-grey">Why expense tracking is so important?</h3>
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-half w3-margin-bottom">
+        <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+          <li class="w3-dark-grey w3-xlarge w3-padding-32">Pros of Tracking Expenses:</li>
+          <li class="w3-padding-16">Financial awareness</li>
+          <li class="w3-padding-16">Budgeting</li>
+          <li class="w3-padding-16">Identifying wasteful spending</li>
+          <li class="w3-padding-16">Goal setting</li>
+          <li class="w3-padding-16">Improved savings</li>
+          <li class="w3-padding-16">Financial decision-making</li>
+          <li class="w3-light-grey w3-padding-24">
+    
+            <a href="https://www.bca.co.id/en/informasi/Edukatips/2023/03/20/03/57/manfaat-mencatat-pengeluaran-yang-perlu-kamu-ketahui" class="button">See more</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="w3-half">
+        <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+          <li class="w3-dark-grey w3-xlarge w3-padding-32">Cons of Not Tracking Expenses:
+          </li>
+          <li class="w3-padding-16">Overspending</li>
+          <li class="w3-padding-16">Poor budgeting</li>
+          <li class="w3-padding-16">Inability to prioritize financial goals</li>
+          <li class="w3-padding-16">Lack of financial awareness</li>
+          <li class="w3-padding-16">Missed opportunities for savings</li>
+          <li class="w3-padding-16">Difficulty in tax preparation</li>
+        
+          <li class="w3-light-grey w3-padding-24">
+            <a href="https://microkey.com/blog/general/6-consequences-of-not-tracking-expenses/" class="button">See more</a>
+          </li>
+        </ul>
+      </div>
+    <!-- End photo grid -->
+    </div>
+  <!-- End Portfolio Section -->
+  </div>
+
+  <!-- Contact Section -->
+  <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
+    <h2 class="w3-text-light-grey">Contact Me</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+    <div class="w3-section">
+      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Muscat, Oman</p>
+      <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: 79164576</p>
+      <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: keangabrielcanaria@mail.com</p>
+    </div><br>
+    <p>Let's get in touch. Send me a message:</p>
+  <!-- End Contact Section -->
+  </div>
+  <!-- Footer -->
+  <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+    
+  <!-- End footer -->
+  </footer>
+
+<!-- END PAGE CONTENT -->
+
+</div>
+
+</body>
+</html>
